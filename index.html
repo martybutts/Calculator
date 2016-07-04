@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Calculator
+	</title>
+	<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<form name = "calc">
+		<table>
+			<tr>
+				<td id="topRow">
+					<input type="text" name="answer" size="20px">
+				</td>
+			</tr>
+				<br>
+				<tr>
+					<td id="bottomRows">
+						<a type="button" name="one" onClick = "calc.answer.value +='1'">1</a>
+						<input type="button" name="two" value=" 2 " onClick = "calc.answer.value +='2'">
+						<input type="button" name="three" value=" 3 " onClick = "calc.answer.value +='3'">
+						<input type="button" name="plus" value=" + " onClick = "calc.answer.value +='+'">
+						<br>
+						<input type="button" name="four" value=" 4 " onClick = "calc.answer.value +='4'">
+						<input type="button" name="five" value=" 5 " onClick = "calc.answer.value +='5'">
+						<input type="button" name="six" value=" 6 " onClick = "calc.answer.value +='6'">
+						<input type="button" name="minus" value=" - " onClick = "calc.answer.value +='-'">
+						<br>
+						<input type="button" name="seven" value=" 7 " onClick = "calc.answer.value +='7'">
+						<input type="button" name="eight" value=" 8 " onClick = "calc.answer.value +='8'">
+						<input type="button" name="nine" value=" 9 " onClick = "calc.answer.value +='9'">
+						<input type="button" name="multiply" value=" * " onClick = "calc.answer.value +='*'">
+						<br>
+						<input type="button" name="cancel" value=" C " onClick = "calc.answer.value =' '">
+						<input type="button" name="zero" value=" 0 " onClick = "calc.answer.value +='0'">
+						<input type="button" name="result" value=" = " onClick = "calc.answer.value =eval(calc.answer.value)">
+						<input type="button" name="divide" value=" / " onClick = "calc.answer.value +='/'">
+						<br>
+					</td>
+				</tr>
+		</table>
+	</form>
+</body>
