@@ -1,31 +1,34 @@
 body {
-	margin: 0 auto;
+    margin: 0 auto;
+    background-color: #87CEFA;
 }
 
 form {
-	margin: 300px 300px;
-	display: flex;
-	justify-content: center;
+    margin: 300px 300px;
+    display: flex;
+    justify-content: center;
 
 }
 
 table {
-	border: 5px solid red;
-	
-
+    border: 5px solid gray;
+background-color: #F0E68C;
 }
 
 #topRow {
-	border: 3px solid green;
+    border: 3px solid black;
+    width:15px;
+    height: 30px;
+    justify-content: center;
+    background-color: cornsilk;
 }
-
 #bottomRows {
-	border: 3px solid blue;
-	
+    border: 3px solid black;
+
 }
 
 a {
-	display: block;
+    display: block;
    width: 45px;
    height: 45px;
    float: left;

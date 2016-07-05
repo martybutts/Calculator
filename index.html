@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <head>
-	<title>
-		Calculator
-	</title>
-	<link href="main.css" rel="stylesheet" type="text/css">
+    <title>
+        Calculator
+    </title>
+    <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<form name = "calc">
-		<table>
-			<tr>
-				<td id="topRow">
-					<input type="text" name="answer" size="20px">
-				</td>
-			</tr>
-				<br>
-				<tr>
-					<td id="bottomRows">
-						<a type="button" name="one" onClick = "calc.answer.value +='1'">1</a>
-						<input type="button" name="two" value=" 2 " onClick = "calc.answer.value +='2'">
-						<input type="button" name="three" value=" 3 " onClick = "calc.answer.value +='3'">
-						<input type="button" name="plus" value=" + " onClick = "calc.answer.value +='+'">
-						<br>
-						<input type="button" name="four" value=" 4 " onClick = "calc.answer.value +='4'">
-						<input type="button" name="five" value=" 5 " onClick = "calc.answer.value +='5'">
-						<input type="button" name="six" value=" 6 " onClick = "calc.answer.value +='6'">
-						<input type="button" name="minus" value=" - " onClick = "calc.answer.value +='-'">
-						<br>
-						<input type="button" name="seven" value=" 7 " onClick = "calc.answer.value +='7'">
-						<input type="button" name="eight" value=" 8 " onClick = "calc.answer.value +='8'">
-						<input type="button" name="nine" value=" 9 " onClick = "calc.answer.value +='9'">
-						<input type="button" name="multiply" value=" * " onClick = "calc.answer.value +='*'">
-						<br>
-						<input type="button" name="cancel" value=" C " onClick = "calc.answer.value =' '">
-						<input type="button" name="zero" value=" 0 " onClick = "calc.answer.value +='0'">
-						<input type="button" name="result" value=" = " onClick = "calc.answer.value =eval(calc.answer.value)">
-						<input type="button" name="divide" value=" / " onClick = "calc.answer.value +='/'">
-						<br>
-					</td>
-				</tr>
-		</table>
-	</form>
+    <form name = "calc">
+        <table>
+            <tr>
+                <td id="topRow">
+                    <input id="inputNum" type="text" name="answer" style="font-size:25px" size="19px">
+                </td>
+            </tr>
+                <br>
+                <tr>
+                    <td id="bottomRows">
+                        <a type="button" name="one" onClick = "calc.answer.value +='1'">1</a>
+                        <a type="button" name="two" onClick = "calc.answer.value +='2'">2</a>
+                        <a type="button" name="three" onClick = "calc.answer.value +='3'">3</a>
+                        <a type="button" name="plus" onClick = "calc.answer.value +='+'">+</a>
+                        <br>
+                        <a type="button" name="four" onClick = "calc.answer.value +='4'">4</a>
+                        <a type="button" name="five" onClick = "calc.answer.value +='5'">5</a>
+                        <a type="button" name="six" onClick = "calc.answer.value +='6'">6</a>
+                        <a type="button" name="minus" onClick = "calc.answer.value +='-'">-</a>
+                        <br>
+                        <a type="button" name="seven" onClick = "calc.answer.value +='7'">7</a>
+                        <a type="button" name="eight" onClick = "calc.answer.value +='8'">8</a>
+                        <a type="button" name="nine" onClick = "calc.answer.value +='9'">9</a>
+                        <a type="button" name="multiply" onClick = "calc.answer.value +='*'">*</a>
+                        <br>
+                        <a type="button" name="C" onClick = "calc.answer.value =''">C</a>
+                        <a type="button" name="zero" onClick = "calc.answer.value +='0'">0</a>
+                        <a id="returnVal" type="button" name="result" value=" = " onClick = "calc.answer.value =eval(calc.answer.value)"> = </a>
+                        <a type="button" name="divide" onClick = "calc.answer.value +='/'"> / </a>
+                        <br>
+                    </td>
+                </tr>
+        </table>
+    </form>
+
 </body>
